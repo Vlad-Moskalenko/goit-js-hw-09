@@ -36,7 +36,7 @@ function onStartBtnClick() {
 function onTimerStart() {
   const timerTime = convertMs(selectedData - Date.now())
 
-  if(timerTime.every(item => item === 0)) timeEnds()
+  if(timerTime.every(item => item == 0)) timeEnds()
 
   timerItemsEl.forEach((el, ind) => el.innerHTML = addLeadingZero(timerTime[ind]))
 }
