@@ -46,7 +46,6 @@ function addLeadingZero(value) {
 }
 
 function timeEnds() {
-  startBtn.removeAttribute("disabled");
   clearInterval(timeoutID)
 }
 
